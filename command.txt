@@ -1,0 +1,42 @@
+git --version
+14...
+git config --global user.name "duxor"
+git config --global user.email "kontakt@dusanperisic.com"
+
+git status
+
+git commit -m "Initial Commit"	(commit sa komentarom)
+git log (pregled commit-a, sa autorom i datumom)
+
+git remote -v
+git push myorigin master (push-ovanje projekta myorigin)
+						(trazi usernama & password)
+						
+u git alatu:
+
+ssh-keygen -t rsa -C "kontakt@dusanperisic.com" (sigurna komunikacija)
+cd .ssh
+clip < id_rsa.pub (copy key to clipboard, zatim ga prekopirati na github u SSH keys)
+
+u cmd:
+git branch mybranch
+git checkout mybranch
+git checkout -b newbranch
+git checkout master
+git add newfile.txt
+git commit -m "new file.txt added"
+git push myorigin newbranch
+git merge mybranch
+get push myorigin master
+
+new folder cloningFolder
+cd cloningFolder
+git clone adresa_____
+
+zakljucak:
+git clone ADRESA (clone repository to local folder)
+git status (check repository status)
+git add . (commit all files)
+git config --global user.name "duxor"
+git config --global user.email "dullle@live.com"
+git push
